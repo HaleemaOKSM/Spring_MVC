@@ -21,6 +21,9 @@
                 <td th:text="${p.name}"></td>
                 <td th:text="${p.price}"></td>
                 <td th:text="${p.quantity}"></td>
+                <td>
+                    <a class="btn btn-danger" th:href="@{/delete(id=${p.id})}"> Delete</a>
+                </td>
             </tr>
         </tbody>
     </table>
